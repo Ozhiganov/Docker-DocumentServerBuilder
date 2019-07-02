@@ -1,5 +1,7 @@
 FROM ubuntu:trusty
 
+USER root
+
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8 DEBIAN_FRONTEND=noninteractive QT_SELECT=qt5
 
 RUN apt-get -y update && \
